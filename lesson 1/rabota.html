@@ -1,0 +1,34 @@
+<html>
+<body>
+<script type= "text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+    }
+</script>
+<table border = "2">
+<tr>
+<td width="50%" onclick="show_text()"> info  </td>
+<td width="50%" onclick="show_pic()"> map </td>
+</tr>
+<tr>
+<td colspan="2"> 
+<div id="c1">Greece is wonderful. 
+</div>
+<div id="c2">
+<img src="g.jpg">
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
