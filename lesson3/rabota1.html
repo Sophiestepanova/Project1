@@ -1,0 +1,75 @@
+<html>
+
+<style>
+    body
+    {
+        background: rgb(9,10,59) url("")
+     
+    td 
+    {
+        background:yellow;
+    }
+table.layout{
+  width: 100%;
+  text-align: center;
+}
+
+td.menu{
+  background:blue
+}
+
+td.menu:hover{
+  background:green
+}
+</style>
+
+<script type= "text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+        
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+    }
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+
+</script>
+<body>
+<table class = layout border= "3">
+<tr>
+<td class="menu"  width="33%" onclick="show_text()"> info  </td>
+<td class="menu" width="33%" onclick="show_pic()"> map </td>
+<td class="menu" width="33%" onclick="show_game()"> about </td>
+</tr>
+<tr>
+<td colspan="3"> 
+<div id="c1">Greece is very wonderful. 
+</div>
+<div id="c2">
+<img src="g.jpg">
+</div>
+<div id="c3"> Game will be hear.
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
