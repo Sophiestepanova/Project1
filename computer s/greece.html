@@ -1,0 +1,91 @@
+
+<html>
+<meta charset="utf-8">
+<style>
+  body {
+  background: rgb(9,10,59) url(Gretsiya.jpg) no-repeat center top;
+  }
+  
+
+p{ color: black;
+   text-align: center ;
+
+}
+
+  td.menu { background:teal;
+  }
+  td.menu:hover{ background:aqua ;
+  }
+
+
+</style>
+
+
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display = 'block';
+c3_elem.style.display = 'none';
+}
+
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display = 'none';
+c3_elem.style.display = 'none';
+}
+
+function show_game() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+}
+
+</script>
+
+<body>
+<table border='none' width="100%">
+<tr>
+<td  class="menu" width="33%" onclick="show_text()"><center>info</center></td>
+<td class="menu" width="33%" onclick="show_pic()"><center>map</center></td>
+<td class="menu" width="33%" onclick="show_game()"><center>victorina</center></td>
+</tr>
+<tr>
+<td colspan = "3">
+
+<div id="c1"> <p>Стоит заговорить о Греции, как сразу на ум приходят всесильные Олимпийские боги во главе с Громовержцем Зевсом,<br>
+ восседающим на высоченном троне в своих чертогах на вершине Олимпа, или гомеровские герои,<br>
+ философы древности и искусные ваятели античных времен, а также великий поход Александра Македонского и разбросанные<br>
+ по побережью Средиземного и Чёрного морей множество греческих колоний, оставивших глубокий след в культурах<br>
+ разных народов в процессе эллинизации Востока.<br>
+
+Правда, сегодня Греция все чаще ассоциируется у всех с теплым солнцем, лазурным морем,<br>
+ белыми домами, ароматом кофе со стаканом холодной воды и разнообразными вечерними развлечениями - в общем, со всем тем,<br>
+ что располагает к неспешности, расслаблению и отдыху.<br>
+
+
+</div>
+
+<div id="c2" style="display:none"><img src="map.jpg" width="90%"></div>
+
+<div id="c3" style="display:none">Cool game soon</div>
+
+
+
+</tr>
+</table>
+
+
+
+
+</body>
+</html>
