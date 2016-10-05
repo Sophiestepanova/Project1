@@ -1,0 +1,123 @@
+
+<html>
+<meta charset="utf-8">
+<style>
+  body {
+  background: rgb(9,10,59) url(Gretsiya.jpg) no-repeat center top;
+  }
+  
+
+p{ color: black;
+   text-align: center ;
+
+}
+
+  td.menu { background:teal;
+  }
+  td.menu:hover{ background:aqua ;
+  }
+
+
+</style>
+
+
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display = 'block';
+c3_elem.style.display = 'none';
+}
+
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display = 'none';
+c3_elem.style.display = 'none';
+}
+
+function show_game() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+}
+function check() {
+    q1elem = document.getElementById("q1");
+    if (q1elem.checked) {
+        alert("Да")
+    }
+    else {
+        alert("Нет")
+    };
+    q3elem = document.getElementById("q3");
+    answer = q3elem.value;
+      alert ("Точно "+answer+"?")
+}
+
+
+</script>
+
+<body>
+
+<table border='none' width="100%">
+<tr>
+<td  class="menu" width="33%" onclick="show_text()"><center>info</center></td>
+<td class="menu" width="33%" onclick="show_pic()"><center>map</center></td>
+<td class="menu" width="33%" onclick="show_game()"><center>victorina</center></td>
+</tr>
+<tr>
+<td colspan = "3">
+
+<div id="c1"> <strong>
+<p>Стоит заговорить о Греции, как сразу на ум приходят всесильные Олимпийские боги во главе с Громовержцем Зевсом,<br>
+ восседающим на высоченном троне в своих чертогах на вершине Олимпа, или гомеровские герои,<br>
+ философы древности и искусные ваятели античных времен, а также великий поход Александра Македонского и разбросанные<br>
+ по побережью Средиземного и Чёрного морей множество греческих колоний, оставивших глубокий след в культурах<br>
+ разных народов в процессе эллинизации Востока.<br>
+
+Правда, сегодня Греция все чаще ассоциируется у всех с теплым солнцем, лазурным морем,<br>
+ белыми домами, ароматом кофе со стаканом холодной воды и разнообразными вечерними развлечениями - в общем, со всем тем,<br>
+ что располагает к неспешности, расслаблению и отдыху.<br>
+ </strong>
+
+</div>
+
+<div id="c2" style="display:none"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6422299.638455041!2d19.31963765901212!3d38.189264121396526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2z0JPRgNC10YbQuNGP!5e0!3m2!1sru!2sru!4v1475649752907" width="2000" height="950" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="c3" style="display:none">
+<input id="q1" type= "checkbox" />
+<label for ="q1">Vopros2</label>
+Количество островов Греции:<br />
+<input type ="radio" name="vopros2"/> 3 <br />
+<input type ="radio"name="vopros2" /> 4<br />
+<input type ="radio"name="vopros2" /> 5<br />
+Количество людей в Греции:<br />
+<input type ="radio" name="vopros3"/> 3 <br />
+<input type ="radio"name="vopros3" /> 4<br />
+<input type ="radio"name="vopros3" /> 5<br />
+
+<input type ="text" id="q3"
+
+/>
+<input type ="button"
+value="check"onclick="check()">
+</div>
+
+
+
+</tr>
+</table>
+
+
+
+
+</body>
+</html>
