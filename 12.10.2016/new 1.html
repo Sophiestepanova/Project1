@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="Jscript1.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet">
+</head>
+<body>
+    <h1>
+        Greece</h1>
+    <table border='none' width="100%">
+        <tr>
+            <td class="menu" width="33%" onclick="show_text()">
+                <center>
+                    <strong>INFO</strong></center>
+            </td>
+            <td class="menu" width="33%" onclick="show_pic()">
+                <center>
+                    <strong>MAP</strong></center>
+            </td>
+            <td class="menu" width="33%" onclick="show_game()">
+                <center>
+                    <strong>QUIZ</strong></center>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="c1">
+                    <strong><big>
+                        <p>
+                            Стоит заговорить о Греции, как сразу на ум приходят всесильные Олимпийские боги
+                            во главе с Громовержцем Зевсом,<br>
+                            восседающим на высоченном троне в своих чертогах на вершине Олимпа, или гомеровские
+                            герои,<br>
+                            философы древности и искусные ваятели античных времен, а также великий поход Александра
+                            Македонского и разбросанные<br>
+                            по побережью Средиземного и Чёрного морей множество греческих колоний, оставивших
+                            глубокий след в культурах<br>
+                            разных народов в процессе эллинизации Востока.<br>
+                            Правда, сегодня Греция все чаще ассоциируется у всех с теплым солнцем, лазурным
+                            морем,<br>
+                            белыми домами, ароматом кофе со стаканом холодной воды и разнообразными вечерними
+                            развлечениями - в общем, со всем тем,<br>
+                            что располагает к неспешности, расслаблению и отдыху.<br>
+                    </big></strong>
+                </div>
+                <div id="c2" style="display: none">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6422299.638455041!2d19.31963765901212!3d38.189264121396526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2z0JPRgNC10YbQuNGP!5e0!3m2!1sru!2sru!4v1475649752907"
+                        width="1875" height="950" frameborder="0" style="border: 0" allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="c3" style="display: none">
+                    <input id="q1" type="checkbox" />
+                    <label for="q1">
+                    </label>
+                    <span class="q18">1)Какое количество островов в Греции?</span><br />
+                    <input type="radio" name="vopros2" /><strong> Более 1400</strong>
+                    <br />
+                    <input type="radio" name="vopros2" />
+                    <span class="q18">Менее 1000</span><br />
+                    <input type="radio" name="vopros2" />
+                    <strong>1569</strong><br />
+                    <strong>2)Каково количество населения Греции на 2010 год? (млн.):</strong><br />
+                    <input type="radio" name="vopros3" />
+                    <strong>9</strong>
+                    <br />
+                    <input type="radio" name="vopros3" />
+                    <strong>15,7</strong><br />
+                    <input type="radio" name="vopros3" />
+                    <strong>11,3</strong><br />
+                    <span class="q18">3)Какой главный город на острове Крит?</span><br />
+                    <input type="radio" name="vopros4" /><strong> Ретимно</strong>
+                    <br />
+                    <input type="radio" name="vopros4" />
+                    <strong>Ираклион</strong><br />
+                    <input type="radio" name="vopros4" /><strong>Афины</strong>
+                    <br />
+                    <strong>4)Какая самая высокая гора в Греции?</strong><br />
+                    <input type="radio" name="vopros4" /><strong> Парнас</strong>
+                    <br />
+                    <input type="radio" name="vopros4" />
+                    <strong>Тимфристос</strong><br />
+                    <input type="radio" name="vopros4" /><strong>Олимп</strong>
+                    <br />
+                    <strong>5)Назавите самую посещаемую достопримечательность Греции:</strong><br />
+                    <input type="text" id="q3" />
+                    <input type="button" value="check" onclick="check()">
+                </div>
+        </tr>
+    </table>
+</body>
+</html>
