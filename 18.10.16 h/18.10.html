@@ -1,0 +1,170 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="Jscript1.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet">
+</head>
+<body>
+    <h1>
+      Greece</h1>
+    <table border='none' width="100%">
+        <tr>
+            <td class="menu" width="33%" onclick="show_text()">
+                <center>
+                    <strong>INFO</strong></center>
+            </td>
+            <td class="menu" width="33%" onclick="show_pic()">
+                <center>
+                    <strong>MAP</strong></center>
+            </td>
+            <td class="menu" width="33%" onclick="show_game()">
+                <center>
+                    <strong>QUIZ</strong></center>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="c1">
+                    <strong><big>
+                        <p>
+                            Стоит заговорить о Греции, как сразу на ум приходят всесильные Олимпийские боги
+                            во главе с Громовержцем Зевсом,<br>
+                            восседающим на высоченном троне в своих чертогах на вершине Олимпа, или гомеровские
+                            герои,<br>
+                            философы древности и искусные ваятели античных времен, а также великий поход Александра
+                            Македонского и разбросанные<br>
+                            по побережью Средиземного и Чёрного морей множество греческих колоний, оставивших
+                            глубокий след в культурах<br>
+                            разных народов в процессе эллинизации Востока.<br>
+                            Правда, сегодня Греция все чаще ассоциируется у всех с теплым солнцем, лазурным
+                            морем,<br>
+                            белыми домами, ароматом кофе со стаканом холодной воды и разнообразными вечерними
+                            развлечениями - в общем, со всем тем,<br>
+                            что располагает к неспешности, расслаблению и отдыху.<br>
+                    </big></strong>
+                </div>
+                <div id="c2" style="display: none;">
+                <table>
+                <tr>
+                <td><div id="map1" style="width: 1350px; height: 400px;"></div></td>
+                <td>
+                <div onclick="map.panTo( [55.753, 37.609], {flying: true})" >Athens</div> <br />
+                <div onclick="alert('hi')" >Saloniki</div> <br />
+                </td>
+                </tr>
+                </table>
+                    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                    <script type="text/javascript">
+
+                        ymaps.ready(init);
+                        var map;
+
+                        function init() {
+                            map = new ymaps.Map("map1", {
+                                center: [39.00, 22.00],
+                                zoom: 7
+                            });
+                        }
+                    </script>
+                </div>
+                <div id="c3" id="instruction" style="display: none; width: 100%;">
+                    <center>
+                        <b>Как хорошо Вы знаете Грецию?</b></center>
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;<span style="color: #006699; text-decoration: underline; cursor: pointer;"
+                        onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+                        Инструкция</span>
+                    <br />
+                    <div>
+                        <ul>
+                            <li>Выберите один из вариантов в каждом из 5 вопросов;</li>
+                            <li>Нажмите на кнопку "Показать результат";</li>
+                            <li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+                            <li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если
+                                Вы ошиблись, там (-).</li>
+                            <li>За каждый правильный ответ начисляется 1 балл;</li>
+                            <li>Оценки: менее 2.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 2.5 но менее 3.75 - УДОВЛЕТВОРИТЕЛЬНО,
+                                3.75 и менее 5 - ХОРОШО, 5 - ОТЛИЧНО;</li>
+                            <li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+                        </ul>
+                        <form name="test">
+                        <ol>
+                            <li>
+                                <input type="text" size="1" value="" name="T1" /><b><span class="q18">1)Какое количество островов в Греции?</b><br />
+                                <input type="radio" value="0" name="Q1" />
+                                Более 1400<br />
+                                <input type="radio" value="1" name="Q1" />
+                                Менее 1000<br />
+                                <input type="radio" value="2" name="Q1" />
+                                1369<br />
+                                <input type="radio" value="3" name="Q1" />
+                                174<br />
+                                <br />
+                            </li>
+                            <li>
+                                <input type="text" size="1" value="" name="T2" /><b><span class="q18"> 2)Каково количество населения Греции
+                                    на 2010 год? (млн.)?</b><br />
+                                <input type="radio" value="0" name="Q2" />
+                                9<br />
+                                <input type="radio" value="1" name="Q2" />
+                                15,7<br />
+                                <input type="radio" value="2" name="Q2" />
+                                11,3<br />
+                                <input type="radio" value="3" name="Q2" />
+                                19,8<br />
+                                <br />
+                            </li>
+                            <li>
+                                <input type="text" size="1" value="" name="T3" /><b><span class="q18"> 3)Какой главный город на острове
+                                    Крит?</b><br />
+                                <input type="radio" value="0" name="Q3" />
+                                Ретимно<br />
+                                <input type="radio" value="1" name="Q3" />
+                                Ираклион<br />
+                                <input type="radio" value="2" name="Q3" />
+                                Афины<br />
+                                <input type="radio" value="3" name="Q3" />
+                                Спарта<br />
+                                <br />
+                            </li>
+                            <li>
+                                <input type="text" size="1" value="" name="T4" /><b><span class="q18"> 4)Какая самая высокая гора в Греции?</b><br />
+                                <input type="radio" value="0" name="Q4" />
+                                Парнас<br />
+                                <input type="radio" value="1" name="Q4" />
+                                Тимфристос<br />
+                                <input type="radio" value="2" name="Q4" />
+                                Олимп<br />
+                                <input type="radio" value="3" name="Q4" />
+                                Эверест<br />
+                                <br />
+                            </li>
+                            <li>
+                                <input type="text" size="1" value="" name="T5" /><b> <span class="q18">5)Назовите самую посещаемую достопримечательность
+                                    Греции:</b><br />
+                                <input type="radio" value="0" name="Q5" />
+                                Дельфы<br />
+                                <input type="radio" value="1" name="Q5" />
+                                Афинский Акрополь<br />
+                                <input type="radio" value="2" name="Q5" />
+                                Храм Зевса<br />
+                                <input type="radio" value="3" name="Q5" />
+                                Колизей<br />
+                                <br />
+                            </li>
+                        </ol>
+                        <center>
+                            <p>
+                                <textarea name="s1" rows="4" cols="70" readonly> </textarea>
+                            </p>
+                            <input onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="reset" value="Сбросить ответы" />
+                        </center>
+                        </form>
+                    </div>
+                    </div>
+        </tr>
+    </table>
+</body>
+</html>
