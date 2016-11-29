@@ -1,0 +1,5 @@
+C:\Users\user\Documents\Visual Studio 2012\Projects\ConsoleApplication13\ДОМАШНЕЕ ЗАДАНИЕ\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\ConsoleApplication13\ДОМАШНЕЕ ЗАДАНИЕ\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\ConsoleApplication13\ДОМАШНЕЕ ЗАДАНИЕ\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\ConsoleApplication13\ДОМАШНЕЕ ЗАДАНИЕ\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\ConsoleApplication13\ДОМАШНЕЕ ЗАДАНИЕ\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
