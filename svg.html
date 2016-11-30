@@ -43,10 +43,15 @@
  <rect x="2100" y="0" width="90" height="30" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
  <rect x="2200" y="0" width="90" height="30" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
  <rect x="2300" y="0" width="90" height="30" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
-  <rect x="5" y="750" width="40" height="30" rx="10" ry="50"
-          fill="khaki" stroke="darkkhaki" stroke-width="5" />
-   <rect x="5" y="750" width="40" height="30" rx="10" ry="50"
-          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+  <rect id="rect2" x="0" y="750" width="40" height="30" rx="10" ry="50"
+          fill="brown" stroke="darkkhaki" stroke-width="5" />
+    <animate 
+           xlink:href="#rect2"
+           attributeName="x"
+           values="0;100;200;300;400;500;600;700;800;900;1000;1100;1200;1300;1400;1500;1600;1700;1800;1900;2000"
+           dur="10s"
+           repeatCount="indefinite"
+/>
 
  <rect x="90" y="750" width="40" height="30" rx="10" ry="50"
           fill="khaki" stroke="darkkhaki" stroke-width="5" />
@@ -73,7 +78,44 @@
           fill="khaki" stroke="darkkhaki" stroke-width="5" />
  <rect x="990" y="750" width="40" height="30" rx="10" ry="50"
           fill="khaki" stroke="darkkhaki" stroke-width="5" />
-  <text x="650" y="900" fill="#ED6E46" font-size="100" font-family="'Leckerli One', cursive">Snack factory</text>
+ <rect x="1080" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+ <rect x="1170" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+ <rect x="1250" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+ <rect x="1340" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+ <rect x="1430" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+  <rect x="1520" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+  <rect x="1610" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+  <rect x="1700" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+          <rect x="1800" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+          <rect x="1890" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" /> 
+           <rect  id="rect1" x="1980" y="750" width="40" height="30" rx="10" ry="50"
+          fill="khaki" stroke="darkkhaki" stroke-width="5" />
+  <animate 
+           xlink:href="#rect1"
+           attributeName="cx"
+           values="1980;2000;"
+           dur="2s"
+           repeatCount="indefinite"
+/>
+
+  <text id="text1" x="650" y="900" fill="#ED6E46" font-size="100" font-family="'Leckerli One', cursive">Snack factory</text>
+  <animate 
+           xlink:href="#text1"
+           attributeName="fill"
+           values="rgb(0,10,255);rgb(0,255,0);rgb(255,0,0);rgb(100,0,255)"
+           dur="15s"
+           repeatCount="10"
+/>
 </svg>
 
 
