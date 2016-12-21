@@ -1,0 +1,36 @@
+﻿body
+{
+    background: rgb(9,10,59) url(Gretsiya.jpg) no-repeat center top;
+}
+
+p
+{
+    color: yellow;
+    text-align: center;
+}
+
+td.menu
+{
+    background: teal;
+}
+
+td.menu:hover
+{
+    background: aqua;
+}
+
+h1
+{
+    text-align: center;
+    color: midnightBlue;
+}
+#bc
+{
+background:black;
+}
+
+.q18
+{
+    font-size: 25;
+    color:black;
+}
